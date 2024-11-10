@@ -1,8 +1,8 @@
 const Header=()=>{
     return(
-        <div className="navbar bg-base-300">
+        <div className="navbar bg-base-100 shadow-lg">
         <div className="navbar-start mx-2">
-          <div className="dropdown">
+          <div className="dropdown z-10">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -22,25 +22,25 @@ const Header=()=>{
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
               <li><a>Courses</a></li>
               <li>
-                <a>More</a>
+                <a >More</a>
                 <ul className="p-2">
-                  <li><a>Admin Login</a></li>
+                  <li><a>Create Course</a></li>
                   <li><a>Testimonials</a></li>
                 </ul>
               </li>
-              <li><a>Item 3</a></li>
+              <li><a>FAQs</a></li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl text-white">CourseX</a>
+          <a className="btn btn-ghost text-xl text-black">CourseX</a>
         </div>
         <div className="navbar-center hidden lg:flex border-gray-500 bg-base-200 py-2  rounded-full font-bold ">
-          <ul className="menu menu-horizontal px-3 text-white">
+          <ul className="menu menu-horizontal px-2 text-black">
             <li><a>Courses</a></li>
             <li>
               <details>
                 <summary>More</summary>
-                <ul className="p-2">
-                  <li><a>Login As Admin</a></li>
+                <ul className="p-1">
+                  <li><a>Create Course</a></li>
                   <li><a>Testimonials</a></li>
                 </ul>
               </details>
@@ -49,7 +49,7 @@ const Header=()=>{
           </ul>
         </div>
         <div className="navbar-end p-2   ">
-          <a className="btn  border- bg-base-200 py-2  rounded-full font-bold text-white">Login</a>
+          <a className="btn  border- bg-base-200 py-2  rounded-full font-bold text-black">Login</a>
         </div>
       </div>
     )

@@ -7,7 +7,7 @@ import Footer from "./Footer";
         <div>
             <Header/>
             <Outlet/>
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     )
  }
