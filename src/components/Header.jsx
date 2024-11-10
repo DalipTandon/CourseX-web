@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Header=()=>{
     return(
         <div className="navbar bg-base-100 shadow-lg">
@@ -28,10 +30,10 @@ const Header=()=>{
                   <li><a>Testimonials</a></li>
                 </ul>
               </li>
-              <li><a>FAQs</a></li>
+              <li><Link to={"/faqs"}>FAQs</Link></li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl text-black">CourseX</a>
+          <Link to={"/"} className="btn btn-ghost text-xl text-black">CourseX</Link>
         </div>
         <div className="navbar-center hidden lg:flex border-gray-500 bg-base-200 py-2  rounded-full font-bold ">
           <ul className="menu menu-horizontal px-2 text-black">
@@ -45,7 +47,7 @@ const Header=()=>{
                 </ul>
               </details>
             </li>
-            <li><a>FAQs</a></li>
+            <li><Link to={"/faqs"}>FAQs</Link></li>
           </ul>
         </div>
         <div className="navbar-end p-2   ">

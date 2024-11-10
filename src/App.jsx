@@ -5,6 +5,7 @@ import Body from './components/Body'
 import Login from './components/Login'
 import Feed from './components/feed'
 import Carousel from './components/Carousel '
+import Faqs from './components/Faqs'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Route path='/' element={<Carousel/>}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/feed' element={<Feed/>}/>
+      <Route path='/faqs' element={<Faqs/>} />
       </Route>
     </Routes>
     </BrowserRouter>
