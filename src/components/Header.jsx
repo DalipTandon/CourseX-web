@@ -1,6 +1,8 @@
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const Header=()=>{
+  const isUser=useSelector(store=>store.user); //checking whether user exists or not
     return(
         <div className="navbar bg-base-100 shadow-lg">
         <div className="navbar-start mx-2">
@@ -50,10 +52,10 @@ const Header=()=>{
             <li><Link to={"/faqs"}>FAQs</Link></li>
           </ul>
         </div>
-        <div className="navbar-end p-2 mx-3 flex gap-4  ">
+        {!isUser && <div className="navbar-end p-2 mx-3 flex gap-4  ">
           <Link to={"/login"} className="btn  border- bg-base-200 py-2   font-bold text-black">Login</Link>
           <Link to={"/signup"} className="btn  border- bg-base-200 py-2   font-bold text-black">Signup</Link>
-        </div>
+        </div>}
       </div>
     )
 }
