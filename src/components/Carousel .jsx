@@ -3,11 +3,12 @@ import { useState } from 'react';
 import pic1 from "../../img/demo2.jpg"
 import pic2 from "../../img/demo1.png"
 import pic3 from "../../img/demo3.jpg"
+import { useSelector } from 'react-redux';
 const Carousel = () => {
     const [currentSlide, setCurrentSlide] = useState(1);
     const totalSlides = 4;
-
-    // Function to go to the next slide
+    const signedInUser=useSelector(store=>store.user);
+    // Function to go to the next slide    
     const goToNextSlide = () => {
         setCurrentSlide((prevSlide) => (prevSlide === totalSlides ? 1 : prevSlide + 1));
     };
@@ -19,7 +20,7 @@ const Carousel = () => {
 
     return (
         <>
-        <h1 className=' text-4xl p-4 mx-28 my-5'>Welcome back</h1>
+       { signedInUser && <h1 className=' text-4xl p-4 mx-28 my-5'>Welcome back ,{signedInUser.firstName}</h1>}
         <div className="flex justify-center w-full h-screen my-20">
             
             <div className="carousel w-full h-full max-w-7xl max-h-[55vh]  rounded-lg shadow-lg relative overflow-hidden">

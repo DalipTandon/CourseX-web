@@ -50,8 +50,9 @@ const Header=()=>{
             <li><Link to={"/faqs"}>FAQs</Link></li>
           </ul>
         </div>
-        <div className="navbar-end p-2   ">
-          <a className="btn  border- bg-base-200 py-2  rounded-full font-bold text-black">Login</a>
+        <div className="navbar-end p-2 mx-3 flex gap-4  ">
+          <Link to={"/login"} className="btn  border- bg-base-200 py-2   font-bold text-black">Login</Link>
+          <Link to={"/signup"} className="btn  border- bg-base-200 py-2   font-bold text-black">Signup</Link>
         </div>
       </div>
     )

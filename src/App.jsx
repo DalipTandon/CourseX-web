@@ -6,11 +6,14 @@ import Login from './components/Login'
 import Feed from './components/feed'
 import Carousel from './components/Carousel '
 import Faqs from './components/Faqs'
-
+import Signup from './components/Signup'
+import appStore from "./utils/appStore"
+import { Provider } from 'react-redux'
 function App() {
 
   return (
     <>
+    <Provider store={appStore}>
     <BrowserRouter basename='/'>
     <Routes>
       <Route path='/' element={<Body/>}>
@@ -18,9 +21,12 @@ function App() {
       <Route path='/login' element={<Login/>}/>
       <Route path='/feed' element={<Feed/>}/>
       <Route path='/faqs' element={<Faqs/>} />
+      <Route path='/login' element={<Login/>} />
+      <Route path='/signup' element={<Signup/>} />
       </Route>
     </Routes>
     </BrowserRouter>
+    </Provider>
     </>
   )
 }
