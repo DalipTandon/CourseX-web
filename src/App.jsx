@@ -19,7 +19,7 @@ function App() {
       <Route path='/' element={<Body/>}>
       <Route path='/' element={<Carousel/>}/>
       <Route path='/login' element={<Login/>}/>
-      <Route path='/feed' element={<Feed/>}/>
+      <Route path='/feed' element={<Feed/>} />
       <Route path='/faqs' element={<Faqs/>} />
       <Route path='/login' element={<Login/>} />
       <Route path='/signup' element={<Signup/>} />

@@ -39,12 +39,12 @@ const Header=()=>{
         </div>
         <div className="navbar-center hidden lg:flex border-gray-500 bg-base-200 py-2  rounded-full font-bold ">
           <ul className="menu menu-horizontal px-2 text-black">
-            <li><a>Courses</a></li>
+            <li><Link to={"/feed"}>Courses </Link></li>
             <li>
               <details>
                 <summary>More</summary>
                 <ul className="p-1">
-                  <li><a>Create Course</a></li>
+                  <li><a>Teach on CourseX</a></li>
                   <li><a>Testimonials</a></li>
                 </ul>
               </details>
@@ -52,9 +52,15 @@ const Header=()=>{
             <li><Link to={"/faqs"}>FAQs</Link></li>
           </ul>
         </div>
-        {!isUser && <div className="navbar-end p-2 mx-3 flex gap-4  ">
+       {!isUser ? <div className="navbar-end p-2 mx-3 flex gap-4  ">
           <Link to={"/login"} className="btn  border- bg-base-200 py-2   font-bold text-black">Login</Link>
           <Link to={"/signup"} className="btn  border- bg-base-200 py-2   font-bold text-black">Signup</Link>
+        </div>:
+        <div className="navbar-end p-2 mx-3 flex gap-4  ">
+          <Link to={"/signup"} className="btn   bg-base-100 py-2   font-bold text-black">Teach on CourseX</Link>
+          <i class="ri-shopping-cart-2-line btn  border- bg-base-100 py-2 "></i>
+          <Link to={"/signup"} className="btn   bg-base-100 py-2   font-bold text-black">My Learnings</Link>
+          <Link to={"/signup"} className="btn   bg-base-100 py-2   font-bold text-black">Logout</Link>
         </div>}
       </div>
     )

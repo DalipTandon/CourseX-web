@@ -4,6 +4,7 @@ import pic1 from "../../img/demo2.jpg"
 import pic2 from "../../img/demo1.png"
 import pic3 from "../../img/demo3.jpg"
 import { useSelector } from 'react-redux';
+import Feed from './feed';
 const Carousel = () => {
     const [currentSlide, setCurrentSlide] = useState(1);
     const totalSlides = 4;

@@ -7,8 +7,8 @@ import { signedUser } from "../utils/userSlice";
 import { useNavigate } from "react-router-dom";
 const Login=()=>{
 
-  const [emailId,setemailId]=useState("");
-  const[password,setPassword]=useState("");
+  const [emailId,setemailId]=useState("daliptandon@gmail.com");
+  const[password,setPassword]=useState("Dalip@123");
   const dispatch=useDispatch();
   const navigate=useNavigate();
   const handleLogin=async()=>{
