@@ -9,6 +9,7 @@ import Faqs from './components/Faqs'
 import Signup from './components/Signup'
 import appStore from "./utils/appStore"
 import { Provider } from 'react-redux'
+import Learnings from './components/Learnings'
 function App() {
 
   return (
@@ -23,6 +24,7 @@ function App() {
       <Route path='/faqs' element={<Faqs/>} />
       <Route path='/login' element={<Login/>} />
       <Route path='/signup' element={<Signup/>} />
+      <Route path='/learnings' element={<Learnings/>} />
       </Route>
     </Routes>
     </BrowserRouter>

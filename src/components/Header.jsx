@@ -58,8 +58,8 @@ const Header=()=>{
         </div>:
         <div className="navbar-end p-2 mx-3 flex gap-4  ">
           <Link to={"/signup"} className="btn   bg-base-100 py-2   font-bold text-black">Teach on CourseX</Link>
-          <i class="ri-shopping-cart-2-line btn  border- bg-base-100 py-2 "></i>
-          <Link to={"/signup"} className="btn   bg-base-100 py-2   font-bold text-black">My Learnings</Link>
+          <i className="ri-shopping-cart-2-line btn  border- bg-base-100 py-2 "></i>
+          <Link to={"/learnings"} className="btn   bg-base-100 py-2   font-bold text-black">My Learnings</Link>
           <Link to={"/signup"} className="btn   bg-base-100 py-2   font-bold text-black">Logout</Link>
         </div>}
       </div>
