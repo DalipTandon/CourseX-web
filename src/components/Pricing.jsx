@@ -1,7 +1,7 @@
 const Pricing = () => {
   return (
     <>
-    <div className="card bg-base-100 w-96 mx-5 shadow-xl">
+    <div className="card bg-base-100 w-96 mx-5 shadow-xl hover:scale-105">
       <div className="card-body">
         <div className="bg-gray-100  ">
         <h2 className="card-title font-serif ">Personal Plan</h2>
@@ -17,7 +17,7 @@ const Pricing = () => {
         </div>
       </div>
     </div>
-    <div className="card bg-base-100 w-96 mx-5 shadow-xl">
+    <div className="card bg-base-100 w-96 mx-5 shadow-xl hover:scale-105">
       <div className="card-body">
         <div className="bg-gray-100  ">
         <h2 className="card-title font-serif ">Team Plan</h2>
@@ -35,7 +35,7 @@ const Pricing = () => {
         </div>
       </div>
     </div>
-    <div className="card bg-base-100 w-96 mx-5 shadow-xl">
+    <div className="card bg-base-100 w-96 mx-5 shadow-xl hover:scale-105">
       <div className="card-body">
         <div className="bg-gray-100  ">
         <h2 className="card-title font-serif ">Enterprise  Plan</h2>

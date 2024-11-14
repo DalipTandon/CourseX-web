@@ -6,6 +6,8 @@ import pic3 from "../../img/demo3.jpg"
 import { useSelector } from 'react-redux';
 import Feed from './Feed';
 import Pricing from './Pricing';
+import Testimonials from './Testimonials';
+import Faqs from './Faqs';
 const Carousel = () => {
     const [currentSlide, setCurrentSlide] = useState(1);
     const totalSlides = 4;
@@ -69,7 +71,13 @@ const Carousel = () => {
         <br></br>
        Reach goals faster with one of our plans or programs. Try one free today or contact sales to learn more.</p>
        <div className='flex gap-4 mx-28 my-12' ><Pricing/></div>
+
+       <h4 className='text-4xl font-bold font-serif mx-28 '>See what others are achieving through learning</h4>
+       <div className='flex gap-4 mx-28 my-12'><Testimonials/></div>
+       <p className='mx-28 text-3xl font-semibold font-serif text-black'>FAQS</p>
+         <Faqs/>
         </div>
+        
     );
 };
 

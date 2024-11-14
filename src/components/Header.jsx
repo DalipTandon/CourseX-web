@@ -24,14 +24,7 @@ const Header=()=>{
             <ul
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <li><a>Courses</a></li>
-              <li>
-                <a >More</a>
-                <ul className="p-2">
-                  <li><a>Create Course</a></li>
-                  <li><a>Testimonials</a></li>
-                </ul>
-              </li>
+              <li><Link to={"/feed"}>Courses</Link></li>
               <li><Link to={"/faqs"}>FAQs</Link></li>
             </ul>
           </div>
@@ -40,15 +33,6 @@ const Header=()=>{
         <div className="navbar-center hidden lg:flex border-gray-500 bg-base-200 py-2   rounded-full font-bold ">
           <ul className="menu menu-horizontal px-2 text-black ">
             <li><Link to={"/feed"}>Courses </Link></li>
-            <li>
-              <details>
-                <summary >More</summary>
-                <ul className=" z-10">
-                  <li><a>Teach on CourseX</a></li>
-                  <li><a>Testimonials</a></li>
-                </ul>
-              </details>
-            </li>
             <li><Link to={"/faqs"}>FAQs</Link></li>
           </ul>
         </div>

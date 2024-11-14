@@ -3,13 +3,13 @@ import { BrowserRouter, Route,Routes } from 'react-router-dom'
 import './App.css'
 import Body from './components/Body'
 import Login from './components/Login'
-import Feed from './components/feed'
 import Carousel from './components/Carousel '
 import Faqs from './components/Faqs'
 import Signup from './components/Signup'
 import appStore from "./utils/appStore"
 import { Provider } from 'react-redux'
 import Learnings from './components/Learnings'
+import Feed from './components/Feed'
 function App() {
 
   return (

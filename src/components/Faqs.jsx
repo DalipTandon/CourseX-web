@@ -1,6 +1,6 @@
 const Faqs = () => {
   return (
-    <div className="join join-vertical w-full p-10  h-[80vh] flex justify-center">
+    <div className="join join-vertical w-full px-10  h-[80vh] flex justify-center">
       <div className="collapse collapse-arrow join-item border-base-300 border hover:bg-gray-100">
         <input type="radio" name="my-accordion-4" defaultChecked />
         <div className="collapse-title text-xl font-medium">
