@@ -3,11 +3,16 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const courseSlice=createSlice({
     name:"mycourse",
-    initialState:null,
+    initialState:[],
     reducers:{
-        addCourse:(state,action)=>{
-            return action.payload;
-        }
+       addCourse: (state, action) => {
+  const newCourses = action.payload;
+  newCourses.forEach(course => {
+    if (!state.some(existingCourse => existingCourse._id === course._id)) {
+      state.push(course);
+    }
+  });
+}
     }
 })
 
