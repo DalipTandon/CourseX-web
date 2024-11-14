@@ -37,13 +37,13 @@ const Header=()=>{
           </div>
           <Link to={"/"} className="btn btn-ghost text-xl text-black">CourseX</Link>
         </div>
-        <div className="navbar-center hidden lg:flex border-gray-500 bg-base-200 py-2  rounded-full font-bold ">
-          <ul className="menu menu-horizontal px-2 text-black">
+        <div className="navbar-center hidden lg:flex border-gray-500 bg-base-200 py-2   rounded-full font-bold ">
+          <ul className="menu menu-horizontal px-2 text-black ">
             <li><Link to={"/feed"}>Courses </Link></li>
             <li>
               <details>
-                <summary>More</summary>
-                <ul className="p-1">
+                <summary >More</summary>
+                <ul className=" z-10">
                   <li><a>Teach on CourseX</a></li>
                   <li><a>Testimonials</a></li>
                 </ul>

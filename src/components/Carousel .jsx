@@ -4,7 +4,8 @@ import pic1 from "../../img/demo2.jpg"
 import pic2 from "../../img/demo1.png"
 import pic3 from "../../img/demo3.jpg"
 import { useSelector } from 'react-redux';
-import Feed from './feed';
+import Feed from './Feed';
+import Pricing from './Pricing';
 const Carousel = () => {
     const [currentSlide, setCurrentSlide] = useState(1);
     const totalSlides = 4;
@@ -20,11 +21,15 @@ const Carousel = () => {
     };
 
     return (
-        <>
-       { signedInUser && <h1 className=' text-4xl p-4 mx-28 my-5'>Welcome back ,{signedInUser.firstName}</h1>}
-        <div className="flex justify-center w-full h-screen my-20">
+        <div className=' p-2'>
+       { signedInUser && <p className=' text-4xl mx-28 mt-10 font-bold'>Welcome back ,{signedInUser.firstName}
+        <br/>
+       <p className='my-4 font-serif'>Ready to dive deep into The world of Courses?</p> 
+       </p> 
+       }
+        <div className="flex justify-center w-full h-[30vw] mt-12 ">
             
-            <div className="carousel w-full h-full max-w-7xl max-h-[55vh]  rounded-lg shadow-lg relative overflow-hidden">
+            <div className="carousel w-full h-full max-w-7xl max-h-[55vh]  rounded-lg shadow-lg relative overflow-hidden ">
                 {[1, 2, 3, 4].map((slide) => (
                     <div
                         key={slide}
@@ -52,8 +57,19 @@ const Carousel = () => {
                     <button onClick={goToNextSlide} className="btn btn-circle">❯</button>
                 </div>
             </div>
+            
         </div>
-        </>
+       <h2 className='text-3xl font-bold font-serif mx-28 '>
+       All the skills you need in one place </h2>
+       <p className='mx-28 text-xl font-semibold font-serif text-gray-500'>From critical skills to technical topics, CourseX supports your professional development.</p>
+
+       <p className='mx-28 text-2xl font-semibold font-serif my-14'>Explore All Our Courses</p>
+       <div className='items-center mx-28'><Feed/></div>
+       <p  className='mx-28 text-xl font-bold font-serif text-gray-500 mt-24'>Accelerate growth — for you or your organization
+        <br></br>
+       Reach goals faster with one of our plans or programs. Try one free today or contact sales to learn more.</p>
+       <div className='flex gap-4 mx-28 my-12' ><Pricing/></div>
+        </div>
     );
 };
 

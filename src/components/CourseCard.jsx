@@ -8,7 +8,6 @@ const CourseCard = ({unique, feed }) => {
   const user = useSelector((store) => store.user);
   const dispatch = useDispatch();
   const { courseName, coursePrice, description, courseUrl, courseRating, _id } = feed;
-
   const handleBuy = async (userID, courseId) => {
     try {
       const res = await axios.post(
@@ -23,6 +22,9 @@ const CourseCard = ({unique, feed }) => {
     alert("Course Bought successfully!!")
     } catch (error) {
       console.error("Error buying course:", error.message);
+      if(!user){
+        alert("Please login")
+      }
     }
   };
 
